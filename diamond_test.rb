@@ -6,13 +6,7 @@ class DiamondTest < Minitest::Test
     answer = Diamond.new('A')
     diamond = answer.diamond
     assert_equal(1, diamond.length)
-    assert_equal "A", diamond[0]
-  end
-
-  def test_letter_b
-    answer = Diamond.new('B')
-    diamond = answer.diamond
-    assert_equal(' B', answer.d_right(1))
+    assert_equal 'A', diamond[0]
   end
 
   def test_counts
@@ -22,8 +16,8 @@ class DiamondTest < Minitest::Test
 
   def test_full_line
     answer = Diamond.new('C')
-    b_line = answer.full_line(1)
-    assert_equal(' B B ', b_line)
+    line = answer.full_line(1)
+    assert_equal(' B B ', line)
   end
 
   def test_letter_d

@@ -3,10 +3,6 @@ class Diamond
   def initialize(letter)
     @int = letter.bytes[0] - 'A'.bytes[0]
   end
-    
-  def make_diamond
-    return ['A']
-  end
 
   def d_right(x)
     spaces = self.line(x)
