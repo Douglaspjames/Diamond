@@ -5,12 +5,12 @@ class Diamond
   end
 
   def d_right(x)
-    spaces = self.line(x)
+    spaces = self.line
     spaces[x] = (x+65).chr
     return spaces
   end
 
-  def line(x)
+  def line
     line = ''
     0.upto(@int) { |space| line += ' '}
     return line
