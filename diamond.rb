@@ -25,7 +25,9 @@ class Diamond
   def diamond
     base = (0..@int).collect { |i| self.full_line(i)}
     slice = base[0,base.length-1]
-    return base + slice.reverse
+    all_lines = base + slice.reverse
+    pretty = all_lines.each {|x| print x, "\n"}
+    return all_lines
   end
     
 end
